@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORM VALID</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-6 m-auto">
+            <form action=" " method="post"  id="registrationForm">
+                <table>
+                    <tr>
+                        <th>First Name</th>
+                        <td>
+                            <input type="text" id="firstName" name="first_name" class="form-control">
+                            <span id="firstNameError" class="text-danger"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Last Name</th>
+                        <td>
+                            <input type="text" id="lastName" name="last_name" class="form-control">
+                            <span id="lastNameError" class="text-danger"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Eamil Address</th>
+                        <td>
+                            <input type="email" id="emailAddress" name="email_address" class="form-control">
+                            <span id="emailError" class="text-danger"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Password</th>
+                        <td>
+                            <input type="password" id="password" name="password" class="form-control">
+                            <span id="passwordError" class="text-danger"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Confirm Password</th>
+                        <td>
+                            <input type="password" id="confirmPassword" name="confirm_password" class="form-control">
+                            <span id="confirmPasswordError" class="text-danger"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Show/Hide</th>
+                        <td>
+                            <input type="checkbox" id="check" name="check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>
+                            <input type="radio" name="gender" id="male">Male
+                            <input type="radio" name="gender" id="female">Female
+                            <span id="genderError" class="text-danger"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>District Name</th>
+                        <td>
+                            <select id="districtName" name="district_name" class="form-control">
+                                <option value=" ">---Select District Name---</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Comilla">Comilla</option>
+                                <option value="Savar">Savar</option>
+                                <option value="Tongi">Tongi</option>
+                            </select>
+                            <span id="districtNameError" class="text-danger"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><input type="submit" name="btn" id="btn" class="btn btn-success" value="Submit"></td>
+                    </tr>
+                    <tr>
+
+                        <td><input type='file' id="inputFile" /></td>
+                        <td><img id="imageUpload" src="" ></td>
+                    </tr>
+                </table>
+            </form>
+
+
+            <form id="form1">
+
+            </form>
+
+
+        </div>
+    </div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
